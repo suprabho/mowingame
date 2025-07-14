@@ -1,45 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&display=swap');
-
 .App {
     font-family: 'Albert Sans', sans-serif;
     text-align: center;
-  }
-  
-  body {
+}
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Albert Sans', sans-serif;
-  }
-  
-  .RiveContainer {
+    background-color: #3F8203;
+}
+
+.RiveContainer {
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: black;
     margin: 0;
     padding: 0;
-  }
-  
-  .game-container {
+}
+
+.game-container {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: #1a1a1a;
+    background-color: #16633A;
     overflow: hidden;
-  }
-  
-  .score {
+}
+
+.score {
     position: fixed;
     top: 20px;
     left: 20px;
-    color: white;
+    color: #16633A;
     font-size: 24px;
     font-family: 'Albert Sans', sans-serif;
     font-weight: 600;
     z-index: 100;
-  }
-  
-  .game-over {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #8DE83D;
+}
+
+.game-over {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -51,9 +54,9 @@
     color: white;
     font-family: 'Albert Sans', sans-serif;
     z-index: 1000;
-  }
-  
-  .play-again {
+}
+
+.play-again {
     background-color: #8fe445;
     color: #06240b;
     border: none;
@@ -65,13 +68,13 @@
     cursor: pointer;
     margin-top: 15px;
     transition: background-color 0.2s;
-  }
-  
-  .play-again:hover {
+}
+
+.play-again:hover {
     background-color: #7fcf49;
-  }
-  
-  .player-character {
+}
+
+.player-character {
     position: absolute;
     width: 320px;
     height: 320px;
@@ -79,9 +82,9 @@
     transition: all 0.1s ease-out;
     transform: translate(-50%, -50%);
     z-index: 10;
-  }
-  
-  .grass-target {
+}
+
+.grass-target {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -89,5 +92,4 @@
     transition: all 0.3s ease-out;
     transform: translate(-50%, -50%);
     z-index: 1;
-  }
-  
+}
